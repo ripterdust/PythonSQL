@@ -1,0 +1,15 @@
+-- Estructura de la base de datos
+
+-- CREANDO LA BASE DE DATOS
+CREATE DATABASE IF NOT EXISTS usrsDB;
+-- USANDO BASE DE DATOS
+USE usrsDB;
+-- CREANDO TABLA
+CREATE TABLE IF NOT EXISTS usuarios(
+ID              INT(20) NOT NULL AUTO_INCREMENT,
+name            VARCHAR(25) NOT NULL,
+phone           VARCHAR(10) NOT NULL,
+
+CONSTRAINT      pk_id PRIMARY KEY(ID),
+CONSTRAINT      uk_phone UNIQUE(phone)
+) ENGINE=InnoDb;
