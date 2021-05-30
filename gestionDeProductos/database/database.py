@@ -1,2 +1,2 @@
 class Database:
-    pass
+    print('Database')
