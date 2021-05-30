@@ -4,7 +4,8 @@ from Database import Database
 
 # ----------- DB -------------
 # Database configuration
-
+db = Database
+db.init()
 
 
 # ----------- Tkinter -------------
@@ -35,6 +36,8 @@ variable.set(CATEGORIES[0])
 
 w = OptionMenu(frameMenu, variable, *CATEGORIES)
 w.pack()
-# ----------- Tkinter -------------
+
+
+# ----------- finishing -------------
 # Main loop tkinter
 root.mainloop()

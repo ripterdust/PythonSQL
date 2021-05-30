@@ -6,7 +6,11 @@ USE products;
 
 -- Categories table
 CREATE TABLE IF NOT EXISTS categories(
+id              int(25) auto_increment,
+category        varchar(255),
 
+CONSTRAINT      pk_categories PRIMARY KEY(id),
+CONSTRAINT      uk_categories UNIQUE(category)
 ) ENGINE=InnoDb;
 
 
