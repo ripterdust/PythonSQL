@@ -1,6 +1,6 @@
 from tkinter import Tk
 from tkinter import *
-from database import Database
+from Database import Database
 
 # ----------- DB -------------
 # Database configuration
@@ -24,10 +24,17 @@ frameMenu = Frame(frame)
 frameMenu.pack(anchor=CENTER)
 Label(frameMenu, text='Gesetión de productos').pack(anchor=CENTER)
 
+# Dropdown
+CATEGORIES = (
+    'computers',
+    'phones',
+    'HDD'
+)
+variable = StringVar(root)
+variable.set(CATEGORIES[0])
 
-
-
-
+w = OptionMenu(frameMenu, variable, *CATEGORIES)
+w.pack()
 # ----------- Tkinter -------------
 # Main loop tkinter
 root.mainloop()
