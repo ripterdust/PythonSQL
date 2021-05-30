@@ -1,6 +1,6 @@
 from tkinter import Tk
 from tkinter import *
-from database.database import Database
+from database import Database
 
 # ----------- DB -------------
 # Database configuration
