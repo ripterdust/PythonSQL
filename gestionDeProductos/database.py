@@ -1,0 +1,2 @@
+class Database:
+    print('Database')
