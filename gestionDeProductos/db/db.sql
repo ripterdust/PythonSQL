@@ -16,5 +16,7 @@ CONSTRAINT      uk_categories UNIQUE(category)
 
 -- product table
 CREATE TABLE IF NOT EXISTS products(
-
+id              int(12) auto_increment,
+product         varchar(75),
+category        for
 )ENGINE=InnoDb;
